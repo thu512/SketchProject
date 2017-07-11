@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:shrinkColumns="*"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_height="fill_parent" >
+
+        <TableRow android:padding="10dp">
+
+            <Button
+                android:id="@+id/b_tt_add_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@mipmap/btn"
+                android:text="@string/add_sub"
+                android:layout_marginRight="5dp"></Button>
+
+            <Button
+                android:id="@+id/b_tt_normal_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/btn"
+                android:text="@string/remove_sub"></Button>
+        </TableRow>
+
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:shrinkColumns="*"
+            android:orientation="vertical"
+
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_height="fill_parent" >
+
+            <!-- 요일 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0"
+                    android:text="시간"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:layout_weight="0.18"
+                    android:id="@+id/textview1"
+                    android:text="월"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.18"
+                    android:id="@+id/textview2"
+                    android:text="화"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.18"
+                    android:id="@+id/textview3"
+                    android:text="수"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.18"
+                    android:id="@+id/textview4"
+                    android:text="목"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.18"
+                    android:id="@+id/textview5"
+                    android:text="금"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+
+            <!-- Row 1 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_1"
+                    android:text="1교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_1"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_1"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_1"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textview4_1"
+                    android:layout_weight="0.16"
+                    android:background="#FFFFFF"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_1"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 2 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_2"
+                    android:text="2교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_2"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_2"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_2"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_2"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_2"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 3 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_3"
+                    android:text="3교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_3"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_3"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_3"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_3"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_3"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 4 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_4"
+                    android:text="4교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_4"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_4"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_4"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_4"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_4"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 5 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_5"
+                    android:text="5교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_5"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_5"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_5"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_5"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_5"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 6 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_6"
+                    android:text="6교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_6"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_6"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_6"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_6"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_6"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 7 -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textview0_7"
+                    android:background="#FFFFFF"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:text="7교시"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_7"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_7"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_7"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_7"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_7"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 8 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_8"
+                    android:text="8교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_8"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_8"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_8"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_8"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_8"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 9 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_9"
+                    android:text="9교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_9"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_9"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_9"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_9"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_9"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 10 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_10"
+                    android:text="10교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_10"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_10"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_10"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_10"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_10"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+            <!-- 경계선  -->
+            <View
+                android:layout_height="4px"
+                android:background="#E9967A" />
+
+            <!-- Row 11 -->
+            <TableRow>
+                <TextView
+                    android:id="@+id/textview0_11"
+                    android:text="11교시"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview1_11"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview2_11"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview3_11"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview4_11"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+                <TextView
+                    android:layout_weight="0.16"
+                    android:id="@+id/textview5_11"
+                    android:text=""
+                    android:gravity="center"
+                    android:lines="3"
+                    android:ems="3"
+                    android:maxEms="3"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.android.sketchproject.UI.MenuActivity">
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="246dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn2"
+        android:layout_alignLeft="@+id/btn2"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@mipmap/btn"
+        android:gravity="center"
+        android:text="@string/photo" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="246dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn3"
+        android:layout_alignLeft="@+id/btn3"
+        android:layout_alignStart="@+id/btn3"
+        android:layout_marginBottom="24dp"
+        android:background="@mipmap/signup"
+        android:onClick="onButtonClicked"
+        android:text="@string/gallery" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="246dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn4"
+        android:layout_alignLeft="@+id/btn4"
+        android:layout_alignStart="@+id/btn4"
+        android:layout_marginBottom="22dp"
+        android:background="@mipmap/btn"
+        android:onClick="onButtonClicked"
+        android:text="@string/timetable" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="246dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
+        android:background="@mipmap/signup"
+        android:onClick="onButtonClicked"
+        android:text="@string/setting" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/login"
+        android:onClick="onButtonClicked" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SketchProject</string>
+    <string name="photo">사진촬영</string>
+    <string name="gallery">앨범</string>
+    <string name="timetable">시간표</string>
+    <string name="setting">설정</string>
+    <string name="login">로그인</string>
+    <string name="signup">회원가입</string>
+    <string name="id_hint">ID를 입력하세요</string>
+    <string name="pw_hint">비밀번호를 입력하세요</string>
+    <string name="auto_login">자동로그인</string>
+    <string name="findid">ID/PW를 잊으셨습니까?</string>
+    <string name="tablebg">배경색</string>
+    <string name="color_btn">선택</string>
+    <string name="add_sub">과목 추가</string>
+    <string name="sub">과목명</string>
+    <string name="time">교시</string>
+    <string name="day">요일</string>
+    <string name="remove_sub">과목 지우기</string>
+
+
+
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.sketchproject.UI.setTimetableActivity"
+    >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:shrinkColumns="*"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview"
+                android:background="#FFFFFF"
+                android:ems="3"
+                android:gravity="center"
+                android:lines="3"
+                android:maxEms="3"
+                android:maxLines="3"
+                android:text="@string/day"
+                android:textColor="#000000" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="28dp"
+                android:layout_span="2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:background="#FFFFFF"
+                android:ems="3"
+                android:gravity="center"
+                android:lines="3"
+                android:maxEms="3"
+                android:maxLines="3"
+                android:text="@string/time"
+                android:textColor="#000000" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="240dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview3"
+                android:background="#FFFFFF"
+                android:ems="3"
+                android:gravity="center"
+                android:lines="3"
+                android:maxEms="3"
+                android:maxLines="3"
+                android:text="@string/sub"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:layout_span="2"
+
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tablebg"
+                android:gravity="center"
+                android:textColor="@color/black_de"
+                />
+
+            <TextView
+                android:id="@+id/colorView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="10dp"
+                android:background="@mipmap/btn"
+                android:onClick="onSelectColor"
+                android:text="@string/color_btn"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="503dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_span="2"
+                android:background="@mipmap/signup"
+                android:onClick="onSubmit"
+                android:text="@string/add_sub" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
